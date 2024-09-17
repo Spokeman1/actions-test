@@ -28,6 +28,19 @@ jobs:
     steps:
       - name: Checkout code
         uses: actions/checkout@v4
+      - name: Check Docker installation
+        run: |
+          # Verificar la versión de Docker
+          docker --version
+          
+          # Listar los contenedores activos
+          docker ps
+          
+          # Verificar la conexión a Docker y permisos
+          docker info
+          
+          # Realizar una prueba de ejecución simple
+          docker run hello-world
 
       - name: Build an image from Dockerfile
         run: |
