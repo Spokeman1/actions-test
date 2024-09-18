@@ -195,4 +195,3 @@ output "web_instance_public_ips" {
 output "web_elb_dns_name" {
   value = aws_elb.web_elb.dns_name
 }
- 
