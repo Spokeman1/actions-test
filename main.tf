@@ -8,7 +8,7 @@
 ##•	Grupos de seguridad para permitir el tráfico en los puertos 80 (HTTP), 443 (HTTPS), 8080 (puerto HTTP alternativo) y 22 (SSH). 
 ##•	Dos instancias de EC2 dentro de las subredes, utilizando los grupos de seguridad.
 ##•	Un load balancer
-## Este es el código TERRAFORM que crea esta infraestructura generado mediante PULUMI IA:
+## Este es el código TERRAFORM que crea esta infraestructura.
 
 provider "aws" {
   region = "us-west-2" # Change to your preferred AWS region
@@ -138,7 +138,7 @@ resource "aws_security_group" "web_sg" {
     from_port   = 22
     to_port     = 22
     protocol    = "tcp"
-    cidr_blocks = ["YOUR_IP_ADDRESS_RANGE"] # Replace with your IP range
+    cidr_blocks = ["1.1.1.0/24"] # Replace with your IP range
   }
   
 # Existing egress rule allowing all outbound traffic remains unchanged
