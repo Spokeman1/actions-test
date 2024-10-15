@@ -1,6 +1,8 @@
-##	LAB de PENTEST
+##	LAB de IaC PENTEST
 
-## Para crear una infraestructura básica  de red en AWS utilizando Terraform, formada por dos instancias EC2 con acceso desde internet por los puertos 80,8080,443 y 22 (SSH limitado por un grupo de seguridad) y un load balancer, necesitamos los siguientes componentes: 
+## Para crear una infraestructura básica  de red en AWS utilizando Terraform, 
+## formada por dos instancias EC2 con acceso desde internet por los puertos 80,8080,443 y 22 (SSH limitado por un grupo de seguridad)
+## y un load balancer, necesitamos los siguientes componentes: 
 ##•	Una VPC con un bloque CIDR especificado. 
 ##•	Dos subredes públicas dentro de la VPC para las instancias de EC2. 
 ##•	Una Puerta de enlace a Internet para permitir el acceso a Internet. 
